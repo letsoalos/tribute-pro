@@ -1,0 +1,68 @@
+[
+  {
+    "StreetName": "123 Main St",
+    "Suburb": "Sandton",
+    "City": "Johannesburg",
+    "Code": "2196"
+  },
+  {
+    "StreetName": "456 Oak Ave",
+    "Suburb": "Randburg",
+    "City": "Johannesburg",
+    "Code": "2194"
+  },
+  {
+    "StreetName": "789 Pine St",
+    "Suburb": "Pretoria Central",
+    "City": "Pretoria",
+    "Code": "0002"
+  },
+  {
+    "StreetName": "101 Birch Rd",
+    "Suburb": "Durban North",
+    "City": "Durban",
+    "Code": "4051"
+  },
+  {
+    "StreetName": "202 Maple St",
+    "Suburb": "Soweto",
+    "City": "Johannesburg",
+    "Code": "1809"
+  },
+  {
+    "StreetName": "303 Cedar St",
+    "Suburb": "Cape Town City Centre",
+    "City": "Cape Town",
+    "Code": "8001"
+  },
+  {
+    "StreetName": "404 Elm St",
+    "Suburb": "Bloemfontein Central",
+    "City": "Bloemfontein",
+    "Code": "9301"
+  },
+  {
+    "StreetName": "505 Fir St",
+    "Suburb": "Polokwane Central",
+    "City": "Polokwane",
+    "Code": "0700"
+  },
+  {
+    "StreetName": "606 Spruce St",
+    "Suburb": "Nelspruit Central",
+    "City": "Nelspruit",
+    "Code": "1200"
+  },
+  {
+    "StreetName": "707 Willow St",
+    "Suburb": "Kimberley Central",
+    "City": "Kimberley",
+    "Code": "8301"
+  },
+  {
+    "StreetName": "808 Birch St",
+    "Suburb": "Rustenburg Central",
+    "City": "Rustenburg",
+    "Code": "0300"
+  }
+]

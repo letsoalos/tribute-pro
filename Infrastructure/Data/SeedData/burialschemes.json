@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "Basic Scheme",
+    "Description": "Basic burial scheme with minimal coverage",
+    "IsPayoutPlan": false,
+    "DateAdded": "2023-01-01",
+    "IsActive": true
+  },
+  {
+    "Name": "Standard Scheme",
+    "Description": "Standard burial scheme with moderate coverage",
+    "IsPayoutPlan": false,
+    "DateAdded": "2023-01-01",
+    "IsActive": true
+  },
+  {
+    "Name": "Premium Scheme",
+    "Description": "Premium burial scheme with extensive coverage",
+    "IsPayoutPlan": true,
+    "DateAdded": "2023-01-01",
+    "IsActive": true
+  }
+]

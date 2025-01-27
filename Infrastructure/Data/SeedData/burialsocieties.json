@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "Sandton Burial Society",
+    "ContactPerson": "John Doe",
+    "PhoneNumber": "0111234567",
+    "Email": "sandton@burialsociety.co.za",
+    "Members": 100,
+    "DateAdded": "2023-01-01",
+    "IsActive": true
+  },
+  {
+    "Name": "Randburg Burial Society",
+    "ContactPerson": "Jane Smith",
+    "PhoneNumber": "0112345678",
+    "Email": "randburg@burialsociety.co.za",
+    "Members": 150,
+    "DateAdded": "2023-01-01",
+    "IsActive": true
+  }
+]

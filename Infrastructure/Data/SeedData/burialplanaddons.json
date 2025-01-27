@@ -1,0 +1,17 @@
+[
+  {
+    "BurialPlanId": 1,
+    "AddonId": 1,
+    "IsMandatory": false
+  },
+  {
+    "BurialPlanId": 2,
+    "AddonId": 2,
+    "IsMandatory": true
+  },
+  {
+    "BurialPlanId": 3,
+    "AddonId": 3,
+    "IsMandatory": true
+  }
+]

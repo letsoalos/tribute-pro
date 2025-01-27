@@ -1,0 +1,23 @@
+[
+  {
+    "PolicyId": 1,
+    "Status": "Active",
+    "Reason": "Policy activated",
+    "StatusChangedOn": "2023-01-01",
+    "ChangedUserById": 1
+  },
+  {
+    "PolicyId": 2,
+    "Status": "Active",
+    "Reason": "Policy activated",
+    "StatusChangedOn": "2023-02-01",
+    "ChangedUserById": 1
+  },
+  {
+    "PolicyId": 3,
+    "Status": "Active",
+    "Reason": "Policy activated",
+    "StatusChangedOn": "2023-03-01",
+    "ChangedUserById": 1
+  }
+]

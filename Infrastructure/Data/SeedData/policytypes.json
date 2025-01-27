@@ -1,0 +1,17 @@
+[
+  {
+    "PolicyTypeCode": "TYPE1",
+    "Name": "Basic Plan",
+    "Description": "Covers basic funeral expenses"
+  },
+  {
+    "PolicyTypeCode": "TYPE2",
+    "Name": "Standard Plan",
+    "Description": "Covers standard funeral expenses"
+  },
+  {
+    "PolicyTypeCode": "TYPE3",
+    "Name": "Premium Plan",
+    "Description": "Covers premium funeral expenses"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "PremiumPlanId": 1,
+    "AgeFrom": 0,
+    "AgeTo": 17,
+    "MonthlyPremium": 15.00
+  },
+  {
+    "PremiumPlanId": 1,
+    "AgeFrom": 18,
+    "AgeTo": 35,
+    "MonthlyPremium": 25.00
+  },
+  {
+    "PremiumPlanId": 2,
+    "AgeFrom": 0,
+    "AgeTo": 17,
+    "MonthlyPremium": 20.00
+  },
+  {
+    "PremiumPlanId": 2,
+    "AgeFrom": 18,
+    "AgeTo": 35,
+    "MonthlyPremium": 35.00
+  }
+]

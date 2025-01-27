@@ -1,0 +1,26 @@
+[
+  {
+    "BurialSchemeId": 1,
+    "Name": "Basic Burial Plan",
+    "Description": "Covers basic burial expenses",
+    "BasePremium": 500.00,
+    "MaxMembers": 5,
+    "IsActive": true
+  },
+  {
+    "BurialSchemeId": 2,
+    "Name": "Standard Burial Plan",
+    "Description": "Covers standard burial expenses",
+    "BasePremium": 1000.00,
+    "MaxMembers": 10,
+    "IsActive": true
+  },
+  {
+    "BurialSchemeId": 3,
+    "Name": "Premium Burial Plan",
+    "Description": "Covers premium burial expenses",
+    "BasePremium": 1500.00,
+    "MaxMembers": 15,
+    "IsActive": true
+  }
+]

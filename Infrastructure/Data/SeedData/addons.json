@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "Flowers",
+    "Description": "Funeral flower arrangement",
+    "Cost": 200.00,
+    "IsActive": true
+  },
+  {
+    "Name": "Catering",
+    "Description": "Funeral catering service",
+    "Cost": 500.00,
+    "IsActive": true
+  },
+  {
+    "Name": "Transport",
+    "Description": "Transport for family members",
+    "Cost": 300.00,
+    "IsActive": true
+  }
+]

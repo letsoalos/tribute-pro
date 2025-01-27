@@ -1,0 +1,37 @@
+[
+  {
+    "StatusCode": "ACTIVE",
+    "Name": "Active",
+    "GroupTypeCode": "POLICY"
+  },
+  {
+    "StatusCode": "PENDING",
+    "Name": "Pending",
+    "GroupTypeCode": "POLICY"
+  },
+  {
+    "StatusCode": "CANCELLED",
+    "Name": "Cancelled",
+    "GroupTypeCode": "POLICY"
+  },
+  {
+    "StatusCode": "EXPIRED",
+    "Name": "Expired",
+    "GroupTypeCode": "POLICY"
+  },
+  {
+    "StatusCode": "APPROVED",
+    "Name": "Approved",
+    "GroupTypeCode": "CLAIM"
+  },
+  {
+    "StatusCode": "REJECTED",
+    "Name": "Rejected",
+    "GroupTypeCode": "CLAIM"
+  },
+  {
+    "StatusCode": "UNDER_REVIEW",
+    "Name": "Under Review",
+    "GroupTypeCode": "CLAIM"
+  }
+]

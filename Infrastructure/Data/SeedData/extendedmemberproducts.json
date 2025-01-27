@@ -1,0 +1,26 @@
+[
+  {
+    "BurialPlanId": 1,
+    "Name": "Extended Family Cover",
+    "Description": "Covers extended family members",
+    "Cost": 200.00,
+    "EligibilityCriteria": "{\"maxMembers\": 5}",
+    "IsActive": true
+  },
+  {
+    "BurialPlanId": 2,
+    "Name": "Extended Family Plus",
+    "Description": "Covers extended family members with additional benefits",
+    "Cost": 400.00,
+    "EligibilityCriteria": "{\"maxMembers\": 10}",
+    "IsActive": true
+  },
+  {
+    "BurialPlanId": 3,
+    "Name": "Extended Family Premium",
+    "Description": "Covers extended family members with premium benefits",
+    "Cost": 600.00,
+    "EligibilityCriteria": "{\"maxMembers\": 15}",
+    "IsActive": true
+  }
+]

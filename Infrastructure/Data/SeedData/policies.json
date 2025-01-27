@@ -1,0 +1,62 @@
+[
+  {
+    "PolicyTypeCode": "TYPE1",
+    "PolicyNumber": "POL123",
+    "ClientId": 1,
+    "PremiumPlanId": 1,
+    "StartDate": "2023-01-01",
+    "EndDate": null,
+    "CurrentStatusId": 1,
+    "IsActive": true,
+    "CreatedDate": "2023-01-01",
+    "CreatedByUserId": 1
+  },
+  {
+    "PolicyTypeCode": "TYPE2",
+    "PolicyNumber": "POL456",
+    "ClientId": 2,
+    "PremiumPlanId": 2,
+    "StartDate": "2023-02-01",
+    "EndDate": null,
+    "CurrentStatusId": 1,
+    "IsActive": true,
+    "CreatedDate": "2023-02-01",
+    "CreatedByUserId": 1
+  },
+  {
+    "PolicyTypeCode": "TYPE3",
+    "PolicyNumber": "POL789",
+    "ClientId": 3,
+    "PremiumPlanId": 3,
+    "StartDate": "2023-03-01",
+    "EndDate": null,
+    "CurrentStatusId": 1,
+    "IsActive": true,
+    "CreatedDate": "2023-03-01",
+    "CreatedByUserId": 1
+  },
+  {
+    "PolicyTypeCode": "TYPE1",
+    "PolicyNumber": "POL101",
+    "ClientId": 4,
+    "PremiumPlanId": 1,
+    "StartDate": "2023-04-01",
+    "EndDate": null,
+    "CurrentStatusId": 1,
+    "IsActive": true,
+    "CreatedDate": "2023-04-01",
+    "CreatedByUserId": 1
+  },
+  {
+    "PolicyTypeCode": "TYPE2",
+    "PolicyNumber": "POL112",
+    "ClientId": 5,
+    "PremiumPlanId": 2,
+    "StartDate": "2023-05-01",
+    "EndDate": null,
+    "CurrentStatusId": 1,
+    "IsActive": true,
+    "CreatedDate": "2023-05-01",
+    "CreatedByUserId": 1
+  }
+]

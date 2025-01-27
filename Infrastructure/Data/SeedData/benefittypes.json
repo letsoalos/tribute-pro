@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Funeral Cover",
+    "Description": "Covers funeral-related expenses",
+    "IsActive": true
+  },
+  {
+    "Name": "Transport Cover",
+    "Description": "Covers transportation costs",
+    "IsActive": true
+  },
+  {
+    "Name": "Memorial Cover",
+    "Description": "Covers memorial service expenses",
+    "IsActive": true
+  }
+]

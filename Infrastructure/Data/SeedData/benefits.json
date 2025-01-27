@@ -1,0 +1,26 @@
+[
+  {
+    "BurialPlanId": 1,
+    "Name": "Basic Funeral Cover",
+    "Description": "Covers basic funeral expenses",
+    "BenefitTypeId": 1,
+    "Cost": 500.00,
+    "IsActive": true
+  },
+  {
+    "BurialPlanId": 2,
+    "Name": "Standard Funeral Cover",
+    "Description": "Covers standard funeral expenses",
+    "BenefitTypeId": 1,
+    "Cost": 1000.00,
+    "IsActive": true
+  },
+  {
+    "BurialPlanId": 3,
+    "Name": "Premium Funeral Cover",
+    "Description": "Covers premium funeral expenses",
+    "BenefitTypeId": 1,
+    "Cost": 1500.00,
+    "IsActive": true
+  }
+]

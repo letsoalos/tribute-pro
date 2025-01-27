@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "Member Only",
+    "BasePremium": 95.00,
+    "PlanType": "MemberOnly",
+    "Description": "Covers only the primary member",
+    "IsActive": true
+  },
+  {
+    "Name": "Single Parent",
+    "BasePremium": 140.00,
+    "PlanType": "SingleParent",
+    "Description": "Covers the primary member and one child",
+    "IsActive": true
+  },
+  {
+    "Name": "Family",
+    "BasePremium": 200.00,
+    "PlanType": "Family",
+    "Description": "Covers the primary member, spouse, and up to 3 children",
+    "IsActive": true
+  }
+]

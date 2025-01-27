@@ -1,0 +1,30 @@
+[
+  {
+    "Name": "Spouse",
+    "Description": "Husband or wife"
+  },
+  {
+    "Name": "Child",
+    "Description": "Son or daughter"
+  },
+  {
+    "Name": "Parent",
+    "Description": "Father or mother"
+  },
+  {
+    "Name": "Sibling",
+    "Description": "Brother or sister"
+  },
+  {
+    "Name": "Grandparent",
+    "Description": "Grandfather or grandmother"
+  },
+  {
+    "Name": "Grandchild",
+    "Description": "Grandson or granddaughter"
+  },
+  {
+    "Name": "Other",
+    "Description": "Other relationship"
+  }
+]
