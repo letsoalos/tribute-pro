@@ -1,10 +1,11 @@
 using Core.Clients.Entities;
+using Core.Interfaces;
 using Core.Premiums.Entities;
 using Core.Shared.Entities;
 
 namespace Core.Policies.Entities;
 
-public class Policy : BaseEntity
+public class Policy : BaseEntity, ISoftDelete
 {
     public required string PolicyTypeCode { get; set; }
     public required string PolicyNumber { get; set; }
@@ -14,6 +15,8 @@ public class Policy : BaseEntity
     public DateTime? EndDate { get; set; } // Null if policy is active
     public int CurrentStatusId { get; set; }
     public bool IsActive { get; set; }
+    public bool IsDeleted { get; set; }
+    public DateTime? DeletedAt { get; set; }
     public DateTime CreatedDate { get; set; }
     public int CreatedByUserId { get; set; }
     public DateTime? ModifiedDate { get; set; }

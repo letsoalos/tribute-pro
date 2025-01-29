@@ -1,6 +1,8 @@
+using Core.Interfaces;
+
 namespace Core.Shared.Entities;
 
-public class Branch : BaseEntity
+public class Branch : BaseEntity, ISoftDelete
 {
     public required string Name { get; set; }
     public int AddressId { get; set; }
@@ -10,6 +12,8 @@ public class Branch : BaseEntity
     public DateTime DateAdded { get; set; }
     public int? AddedByUserId { get; set; }
     public bool IsActive { get; set; }
+    public bool IsDeleted { get; set; }
+    public DateTime? DeletedAt { get; set; }
     public DateTime? ModifiedDate { get; set; }
     public int? ModifiedByUserId { get; set; }
 

@@ -1,9 +1,10 @@
 using Core.BurialPlans.Entities;
+using Core.Interfaces;
 using Core.Shared.Entities;
 
 namespace Core.Clients.Entities;
 
-public class Client : BaseEntity
+public class Client : BaseEntity, ISoftDelete
 {
     public int TitleId { get; set; }
     public required string FirstName { get; set; }
@@ -28,8 +29,8 @@ public class Client : BaseEntity
     public int? BurialSocietyId { get; set; }
     public DateTime DateJoined { get; set; } = DateTime.UtcNow;
     public int AddedByUserId { get; set; }
-    public bool IsActive { get; set; } = true;
-    public bool Deleted { get; set; }
+    public bool IsDeleted { get; set; }       // Soft delete flag
+    public DateTime? DeletedAt { get; set; }  // Timestamp for deletion
     public DateTime? ModifiedDate { get; set; }
     public int? ModifiedByUserId { get; set; }
 

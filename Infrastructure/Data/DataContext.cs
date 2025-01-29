@@ -1,6 +1,8 @@
+using System.Linq.Expressions;
 using System.Reflection;
 using Core.BurialPlans.Entities;
 using Core.Clients.Entities;
+using Core.Interfaces;
 using Core.Members.Entities;
 using Core.Policies.Entities;
 using Core.Premiums.Entities;
@@ -42,6 +44,19 @@ public class DataContext(DbContextOptions<DataContext> options) : DbContext(opti
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
+
+        foreach (var entityType in modelBuilder.Model.GetEntityTypes())
+        {
+            if (typeof(ISoftDelete).IsAssignableFrom(entityType.ClrType))
+            {
+                var parameter = Expression.Parameter(entityType.ClrType, "e");
+                var property = Expression.Property(parameter, "IsDeleted");
+                var negation = Expression.Not(property);
+                var lambda = Expression.Lambda(negation, parameter);
+
+                modelBuilder.Entity(entityType.ClrType).HasQueryFilter(lambda);
+            }
+        }
 
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
