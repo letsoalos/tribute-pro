@@ -12,4 +12,14 @@ public class BranchesController(IGenericRepository<Branch> repo) : BaseApiContro
         return Ok(await repo.ListAllAsync());
     }
 
+    [HttpGet("{id:int}")]
+    public async Task<ActionResult<Branch>> GetBranch(int id)
+    {
+        var branch = await repo.GetByIdAsync(id);
+
+        if (branch == null) return NotFound();
+
+        return branch;
+    }
+
 }

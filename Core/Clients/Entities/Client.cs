@@ -40,7 +40,7 @@ public class Client : BaseEntity, ISoftDelete
     public required MaritalStatus MaritalStatus { get; set; }
     public required IdentityType IdentityType { get; set; }
     public required Ethnicity Ethnicity { get; set; }
-    public BurialPlan? BurialPlan { get; set; }
+    public required BurialPlan BurialPlan { get; set; }
     public BurialSociety? BurialSociety { get; set; }
     public required Branch Branch { get; set; }
 
