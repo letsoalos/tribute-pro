@@ -1,0 +1,19 @@
+<!-- header.component.html -->
+<div class="nav-container">
+  <nav class="main-nav">
+    <div *ngFor="let item of mainMenuItems" class="main-nav-item" [class.active]="selectedMainMenu.label === item.label"
+      (click)="selectMainMenu(item)">
+      {{ item.label }}
+    </div>
+  </nav>
+
+  <nav class="secondary-nav" *ngIf="selectedMainMenu?.subItems">
+    <div class="subnav-inner">
+      <div *ngFor="let subItem of selectedMainMenu.subItems" class="secondary-nav-item" [routerLink]="subItem.route"
+        routerLinkActive="active">
+        <span class="material-icons mr-2">{{ getSubItemIcon(subItem.label) }}</span>
+        {{ subItem.label }}
+      </div>
+    </div>
+  </nav>
+</div>
