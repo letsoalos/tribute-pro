@@ -3,6 +3,14 @@
   @apply sticky top-0 z-50;
   font-family: 'Inter', sans-serif;
   background: #a8c7fa;
+
+  margin-bottom: 25px;
+  transition: margin-bottom 0.3s ease;
+
+  // Optional: Reduce spacing on scroll
+  &.scrolled {
+    margin-bottom: 3rem;
+  }
 }
 
 .main-nav {

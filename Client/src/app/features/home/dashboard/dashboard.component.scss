@@ -1,0 +1,202 @@
+@mixin overlay-backdrop($color) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $color;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-vert {
+  display: flex;
+  align-items: center;
+}
+
+// Base card colors
+$clients-color: #2E86AB;
+$policies-color: #27AE60;
+$plans-color: #8E44AD;
+
+// Derived colors
+$primary-color: $clients-color;
+$secondary-color: #4B6375;
+$accent-color: #FF6B6B;
+$neutral-light: #F8F9FA;
+$neutral-dark: #7F8C8D;
+$text-dark: #2C3E50;
+$success-green: #27AE60;
+$chart-primary: #3498DB;
+
+.summary-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-bottom: 2rem;
+
+  .summary-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    
+    // Accent border
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    mat-card-header {
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.03);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+      mat-card-title {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 600;
+        color: $text-dark;
+        
+        mat-icon {
+          font-size: 1.2em;
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+
+    mat-card-content {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .metric-value {
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 1;
+      }
+
+      .metric-trend {
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        width: fit-content;
+
+        &.positive { background: #E8F5E9; color: #1B5E20; }
+        &.warning { background: #FFF3E0; color: #E65100; }
+        &.neutral { background: #F5F5F5; color: #616161; }
+      }
+    }
+
+    // Card-specific colors
+    &.clients-card::before { background: $clients-color; }
+    &.clients-card .metric-value { color: $clients-color; }
+
+    &.policies-card::before { background: $policies-color; }
+    &.policies-card .metric-value { color: $policies-color; }
+
+    &.plans-card::before { background: $plans-color; }
+    &.plans-card .metric-value { color: $plans-color; }
+  }
+}
+
+.recent-clients {
+  .responsive-table {
+    mat-cell {
+      // Icon Alignment Fix
+      .client-avatar,
+      .date-cell,
+      .branch-cell {
+        @include flex-center-vert;
+        gap: 12px;
+        
+        mat-icon {
+          font-size: 20px !important;
+          width: 24px;
+          height: 24px;
+          @include flex-center;
+        }
+      }
+
+      // Name Column
+      .client-avatar {
+        mat-icon {
+          background: rgba($primary-color, 0.1);
+          border-radius: 50%;
+          padding: 6px;
+        }
+      }
+
+     // Status Badge Enhancements
+     .status-badge {
+      padding: 6px 16px !important;
+      font-size: 0.85rem !important;
+      font-weight: 600 !important;
+      border: 1px solid transparent;
+      display: inline-block;
+      min-width: 80px;
+      text-align: center;
+
+      &.active {
+        background: rgba($success-green, 0.15) !important;
+        color: darken($success-green, 20%) !important;
+        border-color: rgba($success-green, 0.3) !important;
+      }
+
+      &:not(.active) {
+        background: rgba($neutral-dark, 0.08) !important;
+        color: darken($neutral-dark, 15%) !important;
+        border-color: rgba($neutral-dark, 0.1) !important;
+      }
+    }
+  
+    }
+
+    mat-row {
+      transition: all 0.2s ease !important;
+      &:hover {
+        background: rgba($primary-color, 0.03) !important;
+        transform: translateX(4px);
+      }
+    }
+  }
+
+  mat-paginator {
+    background: rgba($primary-color, 0.03) !important;
+  }
+}
+
+
+// Responsive Design
+@media (max-width: 768px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+    
+    .summary-card {
+      mat-card-content .metric-value {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
