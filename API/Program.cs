@@ -1,4 +1,6 @@
 using API.Middleware;
+using Core.Dashboard.Services;
+using Core.Interfaces;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddScoped<IDashboardService, DashboardService>();
 builder.Services.AddDbContext<DataContext>(x =>
 {
     x.UseSqlServer(

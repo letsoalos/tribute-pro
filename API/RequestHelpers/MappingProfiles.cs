@@ -1,6 +1,7 @@
 using API.Dtos;
 using AutoMapper;
 using Core.Clients.Entities;
+using Core.Dtos;
 
 namespace API.RequestHelpers;
 
@@ -27,5 +28,10 @@ public class MappingProfiles : Profile
             .ForMember(d => d.BurialSociety, o => o.Ignore())
              .ForMember(d => d.BurialPlan, o => o.Ignore())
             .ForMember(d => d.Branch, o => o.Ignore());
+
+        CreateMap<Client, DashboardRecentClientDto>()
+           .ForMember(d => d.FullName, o => o.MapFrom(s => $"{s.FirstName} {s.LastName}"))
+           .ForMember(d => d.Branch, o => o.MapFrom(s => s.Branch.Name))
+           .ForMember(d => d.BurialSociety, o => o.MapFrom(s => s.BurialSociety!.Name));
     }
 }

@@ -1,5 +1,6 @@
 using Core.Interfaces;
 using Core.Shared.Entities;
+using Core.Specifications;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Data;
@@ -45,6 +46,11 @@ public class GenericRepository<T>(DataContext context) : IGenericRepository<T> w
 
     public async Task<int> CountAsync(ISpecification<T> spec)
         => await ApplySpecificationForCount(spec).CountAsync();
+
+    public async Task<int> CountAsync()
+    {
+        return await CountAsync(new BaseSpecification<T>());
+    }
 
     private IQueryable<T> ApplySpecification(ISpecification<T> spec)
         => SpecificationEvaluator<T>.GetQuery(context.Set<T>().AsQueryable(), spec);
